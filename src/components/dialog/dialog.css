@@ -1,0 +1,33 @@
+.dialog--blur-backdrop::backdrop {
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+.dialog {
+    opacity: 0;
+    transform: translateY(100px) scale(0.9);
+    transition: opacity 250ms ease, transform 250ms cubic-bezier(0.18, 0.67, 0.29, 1.01);
+}
+
+.dialog::backdrop {
+    opacity: 0;
+    transition: opacity 250ms ease;
+}
+
+.dialog--animate-in {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+}
+
+.dialog--animate-in::backdrop {
+    opacity: 1;
+}
+
+.dialog--animate-out {
+    opacity: 0;
+    transform: translateY(100px) scale(0.9);
+}
+
+.dialog--animate-out::backdrop {
+    opacity: 0;
+}
