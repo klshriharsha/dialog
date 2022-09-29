@@ -15,3 +15,7 @@ A fully accessible and responsive modal component implemented in React using the
 ### Confirmation dialog in dark mode
 
 ![Confirmation Dialog](./docs/confirm-dark.png)
+
+### Mobile
+
+![Dialog](./docs/mobile.png)
