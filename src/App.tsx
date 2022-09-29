@@ -11,6 +11,9 @@ const theme = extendTheme({
             'html, body, #root': {
                 height: '100%',
             },
+            body: {
+                fontFamily: "'Poppins', sans-serif",
+            },
             '#root': {
                 display: 'flex',
                 flexDirection: 'column',
